@@ -12,8 +12,8 @@ roiNumber = imlook4d_ROI_number;  % Current ROI
 
 inputFunction = imlook4d_ROI_data.mean(integrationRange,roiNumber)';
 
-midtimes = imlook4d_ROI_data.midtime(integrationRange)';
-durations = imlook4d_ROI_data.duration(integrationRange)';
+midtimes = imlook4d_ROI_data.midtime(integrationRange)'
+durations = imlook4d_ROI_data.duration(integrationRange)'
 
 %trapz(midtimes, inputFunction)
 AUC = sum( inputFunction .* durations);
